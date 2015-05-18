@@ -1,2 +1,11 @@
 .idea/
+
 .DS_Store
+.png
+screenshot*
+.irb-history
+.apk
+.calabash_settings
+
+build/
+test_servers/

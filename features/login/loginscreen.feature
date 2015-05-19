@@ -1,7 +1,7 @@
 @login
 Feature: Login feature
 
-  Background:Launching the App
+  Background:Launching the App and navigating to login screen
     Given I launch the app
     And I am in login screen
 

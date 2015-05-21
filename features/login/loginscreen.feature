@@ -22,6 +22,7 @@ Feature: Login feature
       | user | pass |
       | abc  | 123  |
       | xyz  | 456  |
+      | des  | 3ew  |
 
   @sign_out
   Scenario: Login Feature with valid credentials

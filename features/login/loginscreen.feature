@@ -1,10 +1,11 @@
-@login
+
 Feature: Login feature
 
   Background:Launching the App and navigating to login screen
     Given I launch the app
     And I am in login screen
 
+@test1
   Scenario: Verification of screen elements
     And I should see "Skype" logo
     And I should see "sign in" text
@@ -12,11 +13,15 @@ Feature: Login feature
     And I should see "Microsoft Account" button
     And I should see "create account" button
 
-  Scenario Outline: Login Feature with invalid credentials
+  Scenario Outline : Login Feature with invalid credentials
+
     And I press "Skype Name" button
     And I enter "<user>" username
-    When I enter "<pass>" password
+    And I enter "<pass>" password
+    When i click sign in button
     Then I should see "Oops, please check your details." message
+    And
+
 
     Examples:
       | user | pass |
